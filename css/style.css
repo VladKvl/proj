@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    width: 100%;
+    background-color: #F6F7F1;
+}
+
+.header__iner {
+    max-width: 1328px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.menu_list {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.organic-cotton h2 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 5px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.organic-cotton p {
+    font-size: 8px;
+    line-height: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card__info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    z-index: 1;
+    top: 20%;
+    left: 5%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.organic-cotton__button {
+    padding: 8px 14px;
+    margin-top: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 8px;
+    max-width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #1F1E1E;
+    border-radius: 2px;
+}
