@@ -1,4 +1,4 @@
-@import url(/css/reset.css);
+@import url(../css/reset.css);
 
 :root {
     --index: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)))
