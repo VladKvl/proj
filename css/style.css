@@ -1,17 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+@import url(/css/reset.css);
+
+:root {
+    --index: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)))
 }
 
-a {
-    text-decoration: none;
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
 }
 
-body {
+html {
     font-family: 'Roboto';
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
+}
+
+._bgimg img {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 
 .header {
@@ -20,71 +29,123 @@ body {
 }
 
 .header__iner {
+    display: flex;
     max-width: 1328px;
     height: 80px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.menu_list {
+.header__menu {
+    display: flex;
+    margin: 20px;
+}
+
+.header__logo {
+    margin-left: 25px;
+}
+
+.menu__list {
     display: flex;
 }
 
-.container {
+.menu__link {
+    color: #1F1E1E;
+}
+
+.main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    max-width: 1328px;
+    margin: 0 auto;
 }
 
-.organic-cotton h2 {
-    font-size: 18px;
-    line-height: 18px;
-    margin-top: 5px;
-    text-align: center;
+.store-categories {
     color: #FFFFFF;
 }
 
-.organic-cotton p {
+.store-categories a {
+    color: #FFFFFF;
+}
+
+.store-categories__large-card {
+    position: relative;
+}
+
+.large-card__text {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.large-card__text h2 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.large-card__text p {
     font-size: 8px;
     line-height: 8px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
 }
 
-.card img {
-    max-width: 100%;
-    height: auto;
-}
-
-.card__info {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 55%;
-    z-index: 1;
-    top: 20%;
-    left: 5%;
-}
-
-.card {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-}
-
-.organic-cotton__button {
+.large-card__button {
     padding: 8px 14px;
     margin-top: 14px;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 8px;
-    max-width: 50%;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
     background: #1F1E1E;
     border-radius: 2px;
+}
+
+.store-categories__card {
+    position: relative;
+    
+}
+
+.card__text {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    height: 164px;
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.card__title {
+    margin: 0 10px;
+}
+
+.card__subtitle {
+    font-size: 13px;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 20px 10px 0;  
+    color: #FFFFFF;
+}
+
+.product-about {
+    display: flex;
+    color: black;
+}
+
+.product-about__text {
+    
 }
